@@ -1,4 +1,4 @@
-# Validatore e Blindatura di Sicurezza per Pipeline RAG - TAVARDT Italia
+# Validatore e Blindatura di Sicurezza per Pipeline RAG
 
 > Audit di Isolamento del Contesto, Prevenzione Iniezioni Indirette e Protezione Difensiva dell'IA
 
