@@ -13,7 +13,7 @@ L'architettura RAG (Retrieval-Augmented Generation) introduce vettori critici di
 
 Questo repository fornisce un'applicazione web interattiva con esecuzione 100% nel browser e un comando CLI in Python per verificare le architetture RAG e generare blueprint difensivi.
 
-## Applicazione Web Interattiva (GitHub Pages)
+## Applicazione Web Interattiva
 
 Accedi allo strumento online e verifica la tua pipeline in tempo reale:
 
