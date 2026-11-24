@@ -11,9 +11,6 @@ Sviluppato e gestito dalla divisione di ingegneria della sicurezza in intelligen
 
 ***
 
-
-***
-
 ## Dimostrazione Online & Hub di Architettura Difensiva
 
 È possibile consultare le specifiche tecniche difensive, i test di diagnostica architetturale e i blueprint di mitigazione direttamente dal browser:
@@ -50,6 +47,14 @@ python3 rag_security_auditor.py
 # 3. Esportare i risultati in formato JSON strutturato
 python3 rag_security_auditor.py -json
 ```
+
+***
+
+## Link Utili
+
+* **Portale Aziendale:** https://ag.tavardt.com/it/
+* **Suite di Diagnostica:** https://tools.tavardt.com/it/
+* **Contatto Tecnico:** https://ag.tavardt.com/it/contatto/
 
 ***
 
