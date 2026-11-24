@@ -7,15 +7,10 @@
 
 **Hub di Architettura Difensiva e Blueprint di Blindatura per Pipeline RAG (Retrieval-Augmented Generation)**
 
-Sviluppato e gestito dalla divisione di ingegneria della sicurezza in intelligenza artificiale di **TAVARDT Italia**.
+Sviluppato e gestito dalla divisione di ingegneria della sicurezza in intelligenza artificiale di **TAVARDT**.
 
 ***
 
-## Portali Ufficiali
-
-* **Portale Istituzionale**: [Portal Institucional](https://ag.tavardt.com/it/)
-* **Centro Strumenti**: [Central de Ferramentas](https://tools.tavardt.com/it/)
-* **Contatto e Supporto Tecnico**: [https://ag.tavardt.com/it/contatto/](https://ag.tavardt.com/it/contatto/)
 
 ***
 
