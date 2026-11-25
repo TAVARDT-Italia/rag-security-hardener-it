@@ -6,19 +6,13 @@
 
 **Hub di Architettura Difensiva e Blueprint di Blindatura per Pipeline RAG (Retrieval-Augmented Generation)**
 
-Sviluppato e gestito dalla divisione di ingegneria della sicurezza in intelligenza artificiale di **TAVARDT**.
-
 ***
 
-## Dimostrazione Online & Hub di Architettura Difensiva
+## Dimostrazione Online
 
 È possibile consultare le specifiche tecniche difensive, i test di diagnostica architetturale e i blueprint di mitigazione direttamente dal browser:
 
 * **[Applicazione Web Ufficiale su GitHub Pages](https://tavardt-italia.github.io/rag-security-hardener-it/)**
-* **Centro Strumenti TAVARDT**
-
-> [!NOTE]
-> **Ambito di Esecuzione Tecnica:** Questo hub web fornisce specifiche di architettura difensiva e blueprint di configurazione. I controlli attivi dei database vettoriali e dell'integrità del contesto richiedono credenziali di ambiente e devono essere eseguiti all'interno dell'applicazione mediante l'utilità CLI ufficiale (`rag_security_auditor.py`). Le pagine web caricate nella sandbox del browser non possono connettersi direttamente ai cluster vettoriali privati.
 
 ***
 
@@ -58,7 +52,7 @@ python3 rag_security_auditor.py -json
 ***
 
 ### Licenza
-Rilasciato sotto licenza MIT. Per maiores detalhes consultare il file [LICENSE](LICENSE).
+Rilasciato sotto licenza MIT.
 
 ***
 
