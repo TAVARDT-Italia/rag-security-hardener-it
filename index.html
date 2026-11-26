@@ -1106,7 +1106,53 @@ python rag_security_auditor.py</div>
 </section>
 <section class="faq-section">
 <h2 class="faq-title">Domande Frequenti sulla Sicurezza nei Pipeline RAG e Database Vettoriali</h2>
-<div class="faq-list"><div class="faq-item"><div class="faq-question">Perché la convalida della sicurezza dei pipeline RAG non deve collegare i database vettoriali tramite browser?<span class="faq-toggle">+</span></div><div class="faq-answer">I database vettoriali di produzione contengono credenziali API critiche e dati riservati protetti da VPC e firewall. Connettere istanze vettoriali direttamente tramite browser esporrebbe credenziali e violerebbe il principio del privilegio minimo. Per questo TAVARDT fornisce blueprint architetturali e strumenti CLI per audit locali e sicuri.</div></div><div class="faq-item"><div class="faq-question">Cos'è l'Indirect Prompt Injection e come compromette le architetture RAG?<span class="faq-toggle">+</span></div><div class="faq-answer">L'Indirect Prompt Injection si verifica quando documenti esterni indicizzati nel database vettoriale contengono istruzioni dannose nascoste. Quando il pipeline RAG recupera questi frammenti e li concatena nel prompt del LLM, il modello può deviare dalle sue istruzioni originali, eseguendo comandi non autorizzati o esfiltrando dati sensibili.</div></div><div class="faq-item"><div class="faq-question">In che modo l'isolamento del contesto con delimitatori strutturati mitiga le iniezioni indirette?<span class="faq-toggle">+</span></div><div class="faq-answer">Incapsulando i dati recuperati in blocchi delimitati (come tag XML &lt;context&gt;...&lt;/context&gt;) e istruendo il modello a trattare il contenuto rigorosamente come dato passivo di riferimento, si crea una chiara barriera semantica che impedisce all'interprete del LLM di trattare istruzioni di terze parti come comandi eseguibili.</div></div><div class="faq-item"><div class="faq-question">Qual è l'importanza del controllo degli accessi basato su metadati (ACL/RBAC) nelle ricerche vettoriali?<span class="faq-toggle">+</span></div><div class="faq-answer">Negli ambienti aziendali, diversi utenti dispongono di differenti livelli di autorizzazione. Il controllo tramite metadati assicura che la query vettoriale applichi filtri obbligatori di identità e ruolo prima della ricerca per similarità, impedendo che un utente recuperi frammenti riservati a cui non ha diritto di accesso.</div></div><div class="faq-item"><div class="faq-question">Quali best practice devono essere adottate nel pipeline di ingestione dei documenti?<span class="faq-toggle">+</span></div><div class="faq-answer">La pipeline di ingestione deve eseguire la sanificazione del testo, la rimozione dei caratteri di controllo invisibili, la verifica dell'integrità della sorgente (source verification), un chunking standardizzato e il rilevamento di pattern di iniezione prima della generazione e memorizzazione degli embedding nel database vettoriale.</div></div></div>
+<div class="faq-list">
+  <div class="faq-item">
+    <button class="faq-btn" onclick="toggleFaq(this)" type="button">
+      <span>Perché la convalida della sicurezza dei pipeline RAG non deve collegare i database vettoriali tramite browser?</span>
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-body">
+      I database vettoriali di produzione contengono credenziali API critiche e dati riservati protetti da VPC e firewall. Connettere istanze vettoriali direttamente tramite browser esporrebbe credenziali e violerebbe il principio del privilegio minimo. Per questo TAVARDT fornisce blueprint architetturali e strumenti CLI per audit locali e sicuri.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-btn" onclick="toggleFaq(this)" type="button">
+      <span>Cos'è l'Indirect Prompt Injection e come compromette le architetture RAG?</span>
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-body">
+      L'Indirect Prompt Injection si verifica quando documenti esterni indicizzati nel database vettoriale contengono istruzioni dannose nascoste. Quando il pipeline RAG recupera questi frammenti e li concatena nel prompt del LLM, il modello può deviare dalle sue istruzioni originali, eseguendo comandi non autorizzati o esfiltrando dati sensibili.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-btn" onclick="toggleFaq(this)" type="button">
+      <span>In che modo l'isolamento del contesto con delimitatori strutturati mitiga le iniezioni indirette?</span>
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-body">
+      Incapsulando i dati recuperati in blocchi delimitati (come tag XML <context>...</context>) e istruendo il modello a trattare il contenuto rigorosamente come dato passivo di riferimento, si crea una chiara barriera semantica che impedisce all'interprete del LLM di trattare istruzioni di terze parti come comandi eseguibili.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-btn" onclick="toggleFaq(this)" type="button">
+      <span>Qual è l'importanza del controllo degli accessi basato su metadati (ACL/RBAC) nelle ricerche vettoriali?</span>
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-body">
+      Negli ambienti aziendali, diversi utenti dispongono di differenti livelli di autorizzazione. Il controllo tramite metadati assicura che la query vettoriale applichi filtri obbligatori di identità e ruolo prima della ricerca per similarità, impedendo che un utente recuperi frammenti riservati a cui non ha diritto di accesso.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-btn" onclick="toggleFaq(this)" type="button">
+      <span>Quali best practice devono essere adottate nel pipeline di ingestione dei documenti?</span>
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-body">
+      La pipeline di ingestione deve eseguire la sanificazione del testo, la rimozione dei caratteri di controllo invisibili, la verifica dell'integrità della sorgente (source verification), un chunking standardizzato e il rilevamento di pattern di iniezione prima della generazione e memorizzazione degli embedding nel database vettoriale.
+    </div>
+  </div>
+</div>
 </section>
 
 <div class="cta-card">
